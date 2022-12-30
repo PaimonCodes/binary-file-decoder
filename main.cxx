@@ -1,8 +1,8 @@
 /*
     Program to read and decode a binary file
     and print into terminal. The concept 
-    will be used later for decoding binary files 
-    for compressed Huffman files.
+    will be used later for decoding compressed
+    Huffman binary files.
 */
 
 #include <iostream>
@@ -25,7 +25,7 @@ int main(int argc, char** argv)
     {
         std::bitset<8> bits(stream[i]);
         std::string byte = bits.to_string();
-        std::cout << byte;
+        std::cout << byte << " ";
     }
 
     // Append newline
